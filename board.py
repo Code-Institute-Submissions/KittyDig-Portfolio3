@@ -36,7 +36,17 @@ class Board:
 
     def receive_attack(self, row, col):
         ''' processes an attack and update the board '''
-        pass
+        if not (0 <= row < self.size) or not (0 <= col < self.size):
+            return "Invalid move"
+
+        if self.grid[row][col] == 'X':
+            return "Already attacked this position"
+
+        hit_ship = None
+        for ship in self.ships:
+            if (row, col) in ship:
+                hit_ship = ship
+                break
 
     def all_ships_sunk(self):
         ''' checks if all ships are sunk '''
