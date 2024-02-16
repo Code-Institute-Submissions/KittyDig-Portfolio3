@@ -2,13 +2,13 @@
 from game import BattleshipsGame
 
 def main():
-    # creates an instance of the BattleshipsGame class
+    ''' creates an instance of the BattleshipsGame class '''
     game = BattleshipsGame()
 
-    # sets up the game
+    ''' sets up the game '''
     game.setup_game()
 
-    # plays the game
+    ''' plays the game '''
     game.play()
 
 if __name__ == "__main__":
