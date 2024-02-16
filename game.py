@@ -29,6 +29,12 @@ class BattleshipsGame:
             if self.board2.all_ships_sunk():
                 break
 
+            # player 2s turn
+            guess2 = self.player2.make_guess(self.board1)
+            result2 = self.board1.receive_attack(*guess2)
+            print(f"{self.player2.name} attacks {guess2} - Result: {result2}")
+            self.board1.display()
+
             ''' game over, declare the winner '''
         if self.board1.all_ships_sunk():
             print(f"{self.player2.name} wins!")
