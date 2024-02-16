@@ -14,7 +14,16 @@ class Board:
 
     def place_ship(self, ship, row, col, orientation):
         ''' places a ship on the board '''
-        pass
+        while True:
+            row = random.randint(0, self.size - 1)
+            col = random.randint(0, self.size - 1)
+
+            ship_coordinates = []
+            for i in range(ship_size):
+                if orientation == 'H':
+                    ship_coordinates.append((row, col + i))
+                else:
+                    ship_coordinates.append((row + i, col))
 
     def receive_attack(self, row, col):
         ''' processes an attack and update the board '''
