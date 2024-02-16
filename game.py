@@ -18,7 +18,7 @@ class BattleshipsGame:
             self.board2.place_ship(2, random.choice(['H', 'V']))
 
     def play(self):
-        # main game loop
+        ''' main game loop '''
         while not (self.board1.all_ships_sunk() or self.board2.all_ships_sunk()):
 
             if self.board2.all_ships_sunk():
@@ -29,3 +29,8 @@ class BattleshipsGame:
             print(f"{self.player2.name} wins!")
         else:
             print(f"{self.player1.name} wins!")
+            
+if __name__ == "__main__":
+    game = BattleshipsGame()
+    game.setup_game()
+    game.play()
