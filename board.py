@@ -42,11 +42,22 @@ class Board:
         if self.grid[row][col] == 'X':
             return "Already attacked this position"
 
+        # checks if the attack hits a ship
         hit_ship = None
         for ship in self.ships:
             if (row, col) in ship:
                 hit_ship = ship
                 break
+
+        if hit_ship:
+            self.grid[row][col] = 'X'  # marks the attack as hit
+            hit_ship.remove((row, col))  # removes the hit coordinate from the ship
+            if not hit_ship:  # if the ship is sunk
+                return "Sunk"
+            return "Hit"
+
+        self.grid[row][col] = 'O'  # marks the attack as miss
+        return "Miss"
 
     def all_ships_sunk(self):
         ''' checks if all ships are sunk '''
