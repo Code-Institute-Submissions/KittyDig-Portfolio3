@@ -61,4 +61,4 @@ class Board:
 
     def all_ships_sunk(self):
         ''' checks if all ships are sunk '''
-        pass
+        return all(not ship for ship in self.ships)

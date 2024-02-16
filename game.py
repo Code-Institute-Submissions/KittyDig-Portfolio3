@@ -2,6 +2,7 @@
 
 from board import Board
 from player import Player
+import random
 
 class BattleshipsGame:
     def __init__(self):
