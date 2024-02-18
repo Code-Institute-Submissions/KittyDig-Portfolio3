@@ -25,7 +25,8 @@ class BattleshipsGame:
             guess1 = self.player1.make_guess(self.board2)
             result1 = self.board2.receive_attack(*guess1)
             print(f"{self.player1.name} attacks {guess1} - Result: {result1}")
-
+            self.board2.display()
+            
             if self.board2.all_ships_sunk():
                 break
 
