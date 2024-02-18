@@ -12,7 +12,7 @@ class Board:
         ''' displays the board '''
         pass
 
-    def place_ship(self, ship, row, col, orientation):
+    def place_ship(self, ship_size, orientation):
         ''' places a ship on the board '''
         while True:
             ''' generates random starting coordinates for the ship '''
