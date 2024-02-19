@@ -10,7 +10,11 @@ class Board:
 
     def display(self, show_ships=False):
         ''' displays the board '''
-        pass
+        print("   " + " ".join(str(i) for i in range(1, self.size + 1)))
+        for i in range(self.size):
+            row = [str(i + 1)] + [self.grid[i][j] if not show_ships and self.grid[i][j] == 'S' else ' ' for j in range(self.size)]
+            print(" ".join(row))
+        print()
 
     def place_ship(self, ship_size, orientation):
         ''' places a ship on the board '''
@@ -38,6 +42,10 @@ class Board:
         ''' processes an attack and update the board '''
         if not (0 <= row < self.size) or not (0 <= col < self.size):
             return "Invalid move"
+
+        # adjusts the row and column to be 0-indexed
+        row -= 1
+        col -= 1
 
         if self.grid[row][col] == 'X':
             return "Already attacked this position"
