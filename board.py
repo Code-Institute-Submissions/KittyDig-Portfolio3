@@ -40,7 +40,7 @@ class Board:
 
     def receive_attack(self, row, col):
         ''' processes an attack and update the board '''
-        if not (0 <= row < self.size) or not (0 <= col < self.size):
+        if not (1 <= row <= self.size) or not (1 <= col <= self.size):
             return "Invalid move"
 
         # adjusts the row and column to be 0-indexed
