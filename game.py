@@ -20,6 +20,15 @@ class BattleshipsGame:
 
     def play(self):
         ''' main game loop '''
+        print("Welcome to Battleships!")
+        print("Rules:")
+        print("1. You have a fleet of ships on a 5x5 grid")
+        print("2. Ships are placed randomly either horizontally or vertically")
+        print("3. Each player takes turns guessing the coordinates to attack")
+        print("4. 'X' represents a hit, 'O' represents a miss")
+        print("5. The first player to sink all the opponent's ships wins.")
+        print()
+        
         while not (self.board1.all_ships_sunk() or self.board2.all_ships_sunk()):
             # player 1s turn
             guess1 = self.player1.make_guess(self.board2)
