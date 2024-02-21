@@ -35,7 +35,7 @@ class Board:
             if all(0 <= r < self.size and 0 <= c < self.size and self.grid[r][c] == ' ' for r, c in ship_coordinates):
                 self.ships.append(ship_coordinates)
                 for r, c in ship_coordinates:
-                    self.grid[r][c] = 'S'  # marks as part of the ship
+                    self.grid[r][c] = ' '  # marks as part of the ship
                 break
 
     def receive_attack(self, row, col):
