@@ -1,32 +1,63 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleships Game
 
-Welcome,
+## Table of Contents
+1. [User Experience](#user-experience)
+   - [User Stories](#user-stories)
+2. [Installation](#installation)
+3. [Design](#design)
+   - [Colors](#colors)
+   - [Design Inspiration](#design-inspiration)
+4. [Features](#features)
+   - [Gameplay](#gameplay)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+   - [User Testing](#user-testing)
+7. [Bugs/Issues](#bugsissues)
+   - [Fixed](#fixed)
+   - [Unfixed](#unfixed)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+   - [Design](#design)
+   - [Python](#python)
+10. [Acknowledgements](#acknowledgements)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## User Experience
 
-## Reminders
+### User Stories
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## Installation
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Design
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Colors
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Design Inspiration
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Features
 
-Connect your GitHub repository and deploy as normal.
+### Gameplay
 
-## Constraints
+## Technologies Used
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Testing
 
----
+### User Testing
 
-Happy coding!
+### Validator
+
+## Bugs/Issues
+
+### Fixed
+
+### Unfixed
+
+## Deployment
+
+## Credits
+
+### Design
+
+### Python
+
+## Acknowledgements
