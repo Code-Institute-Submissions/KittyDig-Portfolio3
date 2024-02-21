@@ -12,7 +12,7 @@ class Board:
         ''' displays the board '''
         print("   " + " ".join(str(i) for i in range(1, self.size + 1)))
         for i in range(self.size):
-            row = [str(i + 1)] + [self.grid[i][j] if not show_ships and self.grid[i][j] == 'S' else ' ' for j in range(self.size)]
+            row = [str(i + 1)] + [str(cell) for cell in self.grid[i]]
             print(" ".join(row))
         print()
 
