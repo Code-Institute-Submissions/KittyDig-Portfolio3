@@ -20,3 +20,6 @@ class Player:
 
             except ValueError:
                 print("Invalid input. Please enter numeric values for row and column.")
+
+# structure and logic in this section was derived from code found on:
+# https://codereview.stackexchange.com/questions/164697/game-of-battleship-2-player-python
