@@ -9,8 +9,8 @@ class BattleshipsGame:
         ''' initialises the game '''
         self.player1 = Player("Player 1")
         self.player2 = Player("Player 2")
-        self.board1 = Board(size=5)
-        self.board2 = Board(size=5)
+        self.board1 = Board(size=5, player=1)
+        self.board2 = Board(size=5, player=2)
 
     def setup_game(self):
         ''' sets up the game, including board size and placing the ships '''

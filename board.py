@@ -1,19 +1,31 @@
 # board.py
 import random
 
+# importing colours to be used for the board
+class Colours:
+    RESET = "\033[00m"
+    BLUE = "\033[94m"
+    RED = "\033[91m"
+
 class Board:
-    def __init__(self, size):
+    def __init__(self, size, player):
         ''' initialise the game board '''
         self.size = size
         self.grid = [[' ' for _ in range(size)] for _ in range(size)]  # empty grid
         self.ships = []  # list to store ship coordinates
+        self.player = player  # Add a player attribute
 
     def display(self, show_ships=False):
-        ''' displays the board '''
-        print("   " + " ".join(str(i) for i in range(1, self.size + 1)))
+        ''' displays the board with different colors for each player '''
+        if self.player == 1:
+            board_colour = "\033[94m"
+        else:
+            board_colour = "\033[91m"
+
+        print(f"{board_colour}   " + " ".join(str(i) for i in range(1, self.size + 1)) + f"{Colours.RESET}")
         for i in range(self.size):
             row = [str(i + 1)] + [str(cell) for cell in self.grid[i]]
-            print(" ".join(row))
+            print(f"{board_colour} {' '.join(row)}{Colours.RESET}")
         print()
 
     def place_ship(self, ship_size, orientation):
