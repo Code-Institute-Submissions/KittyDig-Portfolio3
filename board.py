@@ -89,3 +89,4 @@ class Board:
 # https://pythondex.com/python-battleship-game
 # https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
 # https://bigmonty12.github.io/battleship
+# https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal
