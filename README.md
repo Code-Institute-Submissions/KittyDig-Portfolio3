@@ -24,15 +24,22 @@
 ## User Experience
 
 ### User Stories
-
+- As a player, I want to understand the rules of the game.
+- I want an interactive and engaging gaming experience.
+- I want clear feedback on my moves.
+- I want it to be clear which player is me and which is my opponent.
 
 ## Installation
+- Clone the repository: `git clone https://github.com/KittyDig/Portfolio3`
+- Navigate to the project directory: `cd Portfolio3`
+- Run the game: `python run.py`
 
 ## Design
 
 ### Colors
 
 ### Design Inspiration
+- The design was inspired by classic Battleships games with a focus on simplicity and clarity for the player.
 
 ## Features
 
