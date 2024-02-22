@@ -44,14 +44,22 @@
 ## Features
 
 ### Gameplay
+- Players take turns guessing coordinates to attack the opponent's fleet.
+- 'X' represents a hit, 'O' represents a miss.
+- The first player to sink all opponent's ships wins.
 
 ## Technologies Used
+- Python
 
 ## Testing
 
 ### User Testing
+- Gathered feedback from friends and family for testing the game to see if it was both enjoyable and easy to understand.
 
 ### Validator
+- Used the website https://extendsclass.com/python-tester.html to validate my code, and it found no syntax errors.
+
+![image](images/validator.png)
 
 ## Bugs/Issues
 
