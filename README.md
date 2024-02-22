@@ -55,6 +55,7 @@
 
 ### User Testing
 - Gathered feedback from friends and family for testing the game to see if it was both enjoyable and easy to understand.
+- Resolved an issue with board size, it was too big, based on user testing, the game was too large to be enjoyable for a quick game.
 
 ### Validator
 - Used the website https://extendsclass.com/python-tester.html to validate my code, and it found no syntax errors.
@@ -64,15 +65,29 @@
 ## Bugs/Issues
 
 ### Fixed
+- Resolved an issue with the board size, the game counted 0 as a viable section of the board, which was not correct. This was fixed by using row -= 1 col -= 1 to zero index the board.
+- Resolved an issue with valid inputs, the game would crash whenever a user would either put a space or a non-numerical input as a turn. This was fixed by updating the player.py code to include a catch that gives the player an error if they try to input any value that is not on the board.
 
 ### Unfixed
+- No known issues at the moment.
 
 ## Deployment
+- The game can be run locally by following the installation steps:
+- Clone the repository: `git clone https://github.com/KittyDig/Portfolio3`
+- Navigate to the project directory: `cd Portfolio3`
+- Run the game: `python run.py`
 
 ## Credits
 
 ### Design
 
 ### Python
+- Thanks to the open-source battleships projects that helped me to understand the main concepts of the game:
+  - [GitHub - Python Battleship Game](https://github.com/gbrough/battleship/blob/main/single_player.py) with accompanying video: [YouTube](https://www.youtube.com/watch?app=desktop&v=tF1WRCrd_HQ)
+  - [Codecademy Forum](https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605)
+  - [Code Review Stack Exchange](https://codereview.stackexchange.com/questions/232013/a-simple-battleship-game)
+  - [Pythondex](https://pythondex.com/python-battleship-game)
+  - [Bigmonty12](https://bigmonty12.github.io/battleship)
 
 ## Acknowledgements
+- Thank you to my mentor Spencer for all of the guidance and help with this project!
