@@ -19,11 +19,11 @@ class Board:
     def place_ship(self, ship_size, orientation):
         ''' places a ship on the board '''
         while True:
-            ''' generates random starting coordinates for the ship '''
+            # generates random starting coordinates for the ship
             row = random.randint(0, self.size - 1)
             col = random.randint(0, self.size - 1)
 
-            ''' creates a list of ship coordinates based on the size and orientation '''
+            # creates a list of ship coordinates based on the size and orientation
             ship_coordinates = []
             for i in range(ship_size):
                 if orientation == 'H':
@@ -31,7 +31,7 @@ class Board:
                 else:
                     ship_coordinates.append((row + i, col))
 
-            ''' checks if the ship can be placed without overlapping with ships already on the board '''
+            # checks if the ship can be placed without overlapping with ships already on the board
             if all(0 <= r < self.size and 0 <= c < self.size and self.grid[r][c] == ' ' for r, c in ship_coordinates):
                 self.ships.append(ship_coordinates)
                 for r, c in ship_coordinates:
@@ -70,3 +70,10 @@ class Board:
     def all_ships_sunk(self):
         ''' checks if all ships are sunk '''
         return all(not ship for ship in self.ships)
+
+
+# some of the code for the structure and logic in this section was derived from code found on:
+# https://codereview.stackexchange.com/questions/232013/a-simple-battleship-game
+# https://pythondex.com/python-battleship-game
+# https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
+# https://bigmonty12.github.io/battleship

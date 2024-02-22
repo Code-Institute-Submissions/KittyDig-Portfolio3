@@ -55,3 +55,7 @@ if __name__ == "__main__":
     game = BattleshipsGame()
     game.setup_game()
     game.play()
+
+    # some of the code for the structure and logic in this section was derived from code found on:
+    # https://pythondex.com/python-battleship-game
+    # https://github.com/gbrough/battleship/blob/main/single_player.py with accompanying video: https://www.youtube.com/watch?app=desktop&v=tF1WRCrd_HQ
