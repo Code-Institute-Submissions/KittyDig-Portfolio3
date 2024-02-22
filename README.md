@@ -37,6 +37,9 @@
 ## Design
 
 ### Colors
+- I used red and a blue / purple colour to differentiate between the two players boards.
+
+![colours](images/colours.png)
 
 ### Design Inspiration
 - The design was inspired by classic Battleships games with a focus on simplicity and clarity for the player.
@@ -60,7 +63,7 @@
 ### Validator
 - Used the website https://extendsclass.com/python-tester.html to validate my code, and it found no syntax errors.
 
-![image](images/validator.png)
+![validator](images/validator.png)
 
 ## Bugs/Issues
 
@@ -80,14 +83,17 @@
 ## Credits
 
 ### Design
+- For the design, I used https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal to help me understand how to add colour to the game.
+- The design is basic, with one board red for one player, and one board blue / purple for another player.
 
 ### Python
 - Thanks to the open-source battleships projects that helped me to understand the main concepts of the game:
-  - [GitHub - Python Battleship Game](https://github.com/gbrough/battleship/blob/main/single_player.py) with accompanying video: [YouTube](https://www.youtube.com/watch?app=desktop&v=tF1WRCrd_HQ)
-  - [Codecademy Forum](https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605)
-  - [Code Review Stack Exchange](https://codereview.stackexchange.com/questions/232013/a-simple-battleship-game)
-  - [Pythondex](https://pythondex.com/python-battleship-game)
-  - [Bigmonty12](https://bigmonty12.github.io/battleship)
+  - [GitHub - gbrough Python Battleship Game](https://github.com/gbrough/battleship/blob/main/single_player.py) with accompanying video: [YouTube](https://www.youtube.com/watch?app=desktop&v=tF1WRCrd_HQ)
+  - [Codecademy Forum - cloud2236863496](https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605)
+  - [Code Review Stack Exchange - Haliax](https://codereview.stackexchange.com/questions/232013/a-simple-battleship-game)
+  - [Pythondex - Jarvis Silva](https://pythondex.com/python-battleship-game)
+  - [Bigmonty12 - Austin Montgomery, Avery Smith](https://bigmonty12.github.io/battleship)
+  - [Stack Overflow - joeld, Peter Mortensen](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
 
 ## Acknowledgements
 - Thank you to my mentor Spencer for all of the guidance and help with this project!
