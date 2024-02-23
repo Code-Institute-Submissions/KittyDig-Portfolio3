@@ -1,5 +1,7 @@
 # Battleships Game
 
+![startScreen](images/startScreen.png)
+
 ## Table of Contents
 1. [User Experience](#user-experience)
    - [User Stories](#user-stories)
