@@ -17,19 +17,29 @@
 7. [Bugs/Issues](#bugsissues)
    - [Fixed](#fixed)
    - [Unfixed](#unfixed)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+8. [Future Development](#future-development)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
    - [Design](#design)
    - [Python](#python)
 10. [Acknowledgements](#acknowledgements)
 
 ## User Experience
 
+Project goals:
+
+- To make an interactive and user-friendly command line game.
+
+- To provide a game that suits players of any level.
+
+- To create a positive gaming experience.
+
 ### User Stories
 - As a player, I want to understand the rules of the game.
 - I want an interactive and engaging gaming experience.
 - I want clear feedback on my moves.
 - I want it to be clear which player is me and which is my opponent.
+- I want the game to be easily playable by a gamer of any level.
 
 ## Installation
 - Clone the repository: `git clone https://github.com/KittyDig/Portfolio3`
@@ -52,6 +62,9 @@
 - Players take turns guessing coordinates to attack the opponent's fleet.
 - 'X' represents a hit, 'O' represents a miss.
 - The first player to sink all opponent's ships wins.
+- Player 1 goes first, they are asked to give the row and column of their guess.
+- If the player gives a guess that is not a valid response, they are informed of this, and are told to give a different answer.
+- If the player hits the other player's ships and manages to sink them both, this player wins.
 
 ## Technologies Used
 - Python
@@ -75,6 +88,10 @@
 
 ### Unfixed
 - No known issues at the moment.
+
+## Future Development
+
+- I would like to be able to attach a google sheets to this project to be able to allow the players to enter their names so they can keep track of the scores.
 
 ## Deployment
 - The game can be run locally by following the installation steps:
