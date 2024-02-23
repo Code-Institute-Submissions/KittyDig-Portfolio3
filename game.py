@@ -20,14 +20,20 @@ class BattleshipsGame:
 
     def play(self):
         ''' main game loop '''
-        print("Welcome to Battleships!")
+        print("          ____              __    __    ___                   __                    ")
+        print("         /\  _`\           /\ \__/\ \__/\_ \                 /\ \      __    ")       
+        print("         \ \ \L\ \     __  \ \ ,_\ \ ,_\//\ \      __    ____\ \ \___ /\_\  _____     ____ ")
+        print("          \ \  _ <'  /'__`\ \ \ \/\ \ \/ \ \ \   /'__`\ /',__\  \  _ `\/\ \/\ '__`\  /',__\ ")
+        print("           \ \ \L\ \/\ \L\.\_\ \ \_\ \ \_ \_\ \_/\  __//\__, ` \ \ \ \ \ \ \ \ \L\ \/\__, `\  ")
+        print("            \ \____/\ \__/.\_ \ \__ \ \__\/\____\ \____\/\____/ \ \_\ \_\ \_\ \ ,__/\/\____/ ")
+        print("             \/___/  \/__/\/_/ \/__/ \/__/\/____/\/____/\/___/   \/_/\/_/\/_/\ \ \/  \/___/")
         print("Rules:")
         print("1. You have a fleet of ships on a 5x5 grid")
         print("2. Ships are placed randomly either horizontally or vertically")
         print("3. Each player takes turns guessing the coordinates to attack")
         print("4. 'X' represents a hit, 'O' represents a miss")
         print("5. The first player to sink all the opponent's ships wins.")
-        print()
+
         
         while not (self.board1.all_ships_sunk() or self.board2.all_ships_sunk()):
             # player 1s turn
