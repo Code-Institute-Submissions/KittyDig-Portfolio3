@@ -20,20 +20,22 @@ class BattleshipsGame:
 
     def play(self):
         ''' main game loop '''
-        print("  ____        _   _   _           _     _  ")
-        print(" |  _ \      | | | | | |         | |   (_)")       
-        print(" | |_) | __ _| |_| |_| | ___  ___| |__  _ _ __  ___  ")
-        print(" |  _ < / _` | __| __| |/ _ \/ __| '_ \| | '_ \/ __|")
-        print(" | |_) | (_| | |_| |_| |  __/\__ \ | | | | |_) \__ \ ")
-        print(" |____/ \__,_|\__|\__|_|\___||___/_| |_|_| .__/|___/")
-        print("                                         | | ")
-        print("                                         |_| ")
-        print("Rules:")
-        print("1. You have a fleet of ships on a 5x5 grid")
-        print("2. Ships are placed randomly either horizontally or vertically")
-        print("3. Each player takes turns guessing the coordinates to attack")
-        print("4. 'X' represents a hit, 'O' represents a miss")
-        print("5. The first player to sink all the opponent's ships wins.")
+        print("""
+  ____        _   _   _           _     _  
+ |  _ \      | | | | | |         | |   (_)
+ | |_) | __ _| |_| |_| | ___  ___| |__  _ _ __  ___  
+ |  _ < / _` | __| __| |/ _ \/ __| '_ \| | '_ \/ __|
+ | |_) | (_| | |_| |_| |  __/\__ \ | | | | |_) \__ \ 
+ |____/ \__,_|\__|\__|_|\___||___/_| |_|_| .__/|___/
+                                         | | 
+                                         |_|
+Rules:
+1. You have a fleet of ships on a 5x5 grid
+2. Ships are placed randomly either horizontally or vertically
+3. Each player takes turns guessing the coordinates to attack
+4. 'X' represents a hit, 'O' represents a miss
+5. The first player to sink all the opponent's ships wins.
+        """)
 
         
         while not (self.board1.all_ships_sunk() or self.board2.all_ships_sunk()):
