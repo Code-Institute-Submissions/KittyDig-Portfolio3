@@ -84,6 +84,8 @@ Project goals:
 - When starting the game, the player is prompted to choose their opponent, either a human player or the computer.
 - If the player chooses to play against the computer, the computer will make random guesses for its turns.
 
+![option](images/option.png)
+
 ## Technologies Used
 - Python for creating the game.
 - Heroku for deploying the app.
