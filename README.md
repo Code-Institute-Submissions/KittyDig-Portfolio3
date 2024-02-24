@@ -144,6 +144,13 @@ Project goals:
 - Navigate to the project directory: `cd Portfolio3`
 - Run the game: `python run.py`
 
+- The game can be run on Heroku by:
+   - Cloning the repository.
+   - Creating a new Heroku app
+   - Setting the buildpacks to Python and NodeJS in that order.
+   - Linking the repository to the app.
+   - Clicking on deploy.
+
 ## Credits
 
 ### Design
