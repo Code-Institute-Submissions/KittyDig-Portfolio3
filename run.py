@@ -4,7 +4,7 @@ from game import BattleshipsGame
 def main():
     while True:
         try:
-            # logic for giving the player the option to choose between a computer controlled opponant or another person
+            # logic for giving the player the option to choose between a computer controlled opponent or another person
             print("Choose your opponent:")
             print("1. Play against a local player")
             print("2. Play against the computer")
