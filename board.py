@@ -2,16 +2,20 @@
 import random
 
 # importing colours to be used for the board
+
+
 class Colours:
     RESET = "\033[00m"
     BLUE = "\033[94m"
     RED = "\033[91m"
 
+
 class Board:
     def __init__(self, size, player):
         ''' initialise the game board '''
         self.size = size
-        self.grid = [[' ' for _ in range(size)] for _ in range(size)]  # empty grid
+        self.grid = [[' ' for _ in range(size)] for _ in range(size)]
+        # empty grid
         self.ships = []  # list to store ship coordinates
         self.player = player  # Add a player attribute
 
@@ -22,7 +26,8 @@ class Board:
         else:
             board_colour = "\033[91m"
 
-        print(f"{board_colour}   " + " ".join(str(i) for i in range(1, self.size + 1)) + f"{Colours.RESET}")
+        print(f"{board_colour}   " + " ".join(str(i)
+              for i in range(1, self.size + 1)) + f"{Colours.RESET}")
         for i in range(self.size):
             row = [str(i + 1)] + [str(cell) for cell in self.grid[i]]
             print(f"{board_colour} {' '.join(row)}{Colours.RESET}")
@@ -71,7 +76,8 @@ class Board:
 
         if hit_ship:
             self.grid[row][col] = 'X'  # marks the attack as hit
-            hit_ship.remove((row, col))  # removes the hit coordinate from the ship
+            # removes the hit coordinate from the ship
+            hit_ship.remove((row, col))
             if not hit_ship:  # if the ship is sunk
                 return "Sunk"
             return "Hit"

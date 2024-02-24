@@ -4,6 +4,7 @@ from board import Board
 from player import Player
 import random
 
+
 class BattleshipsGame:
     def __init__(self, player2_type):
         ''' initializes the game '''
@@ -24,13 +25,13 @@ class BattleshipsGame:
     def play(self):
         ''' main game loop '''
         print("""
-  ____        _   _   _           _     _  
+  ____        _   _   _           _     _
  |  _ \      | | | | | |         | |   (_)
- | |_) | __ _| |_| |_| | ___  ___| |__  _ _ __  ___  
+ | |_) | __ _| |_| |_| | ___  ___| |__  _ _ __  ___
  |  _ < / _` | __| __| |/ _ \/ __| '_ \| | '_ \/ __|
- | |_) | (_| | |_| |_| |  __/\__ \ | | | | |_) \__ \ 
+ | |_) | (_| | |_| |_| |  __/\__ \ | | | | |_) \__ \
  |____/ \__,_|\__|\__|_|\___||___/_| |_|_| .__/|___/
-                                         | | 
+                                         | |
                                          |_|
 Rules:
 1. You have a fleet of ships on a 5x5 grid
@@ -40,7 +41,6 @@ Rules:
 5. The first player to sink all the opponent's ships wins.
         """)
 
-        
         while not (self.board1.all_ships_sunk() or self.board2.all_ships_sunk()):
             # player 1's turn
             guess1 = self.player1.make_guess(self.board2)
@@ -72,12 +72,12 @@ Rules:
         row = random.randint(1, board.size)
         col = random.randint(1, board.size)
         return row, col
-        
+
+
 if __name__ == "__main__":
     game = BattleshipsGame(player2_type="computer")
     game.setup_game()
     game.play()
-
 
     # some of the code for the structure and logic in this section was derived from code found on:
     # https://pythondex.com/python-battleship-game
