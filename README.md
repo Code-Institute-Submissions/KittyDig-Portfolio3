@@ -1,13 +1,18 @@
 # Battleships Game
 
-![startScreen](images/startScreen.png)
+![mockup](images/mockup1.png)
+
+This is a take on the classic game 'Battleships' made entirely with python. It is a command line two player game which was deployed using Heroku.
+
+The live site can be found [here](https://portfolio3-battleships-225355a434d1.herokuapp.com/).
 
 ## Table of Contents
 1. [User Experience](#user-experience)
    - [User Stories](#user-stories)
 2. [Installation](#installation)
 3. [Design](#design)
-   - [Colors](#colors)
+   - [Logo](#logo)
+   - [Colours](#colours)
    - [Design Inspiration](#design-inspiration)
 4. [Features](#features)
    - [Gameplay](#gameplay)
@@ -26,12 +31,12 @@
 
 ## User Experience
 
+This section focuses on the UX process with the player in mind, to help understand the processes that went into creating this game to make it as user-friendly as possible.
+
 Project goals:
 
 - To make an interactive and user-friendly command line game.
-
 - To provide a game that suits players of any level.
-
 - To create a positive gaming experience.
 
 ### User Stories
@@ -48,13 +53,21 @@ Project goals:
 
 ## Design
 
-### Colors
-- I used red and a blue / purple colour to differentiate between the two players boards.
+### Logo
+![startScreen](images/startScreen.png)
+
+- I used [this](https://patorjk.com/software/taag/#p=display&f=Big&t=Battleships) website to generate ascii art for the logo for the game to make it stand out visually.
+- I took inspiration from old video game titles.
+
+### Colours
+- I used red and a blue colour to differentiate between the two players boards.
+- I used these colours as they are colours which are easily recognisable to mean opposite players, as most games utilise red and blue for this purpose.
 
 ![colours](images/colours.png)
 
 ### Design Inspiration
 - The design was inspired by classic Battleships games with a focus on simplicity and clarity for the player.
+- By using two different colours for the two boards adds clarity to the game for the players.
 
 ## Features
 
@@ -67,7 +80,8 @@ Project goals:
 - If the player hits the other player's ships and manages to sink them both, this player wins.
 
 ## Technologies Used
-- Python
+- Python for creating the game.
+- Heroku for deploying the app.
 
 ## Testing
 
@@ -103,7 +117,7 @@ Project goals:
 
 ### Design
 - For the design, I used https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal to help me understand how to add colour to the game.
-- The design is basic, with one board red for one player, and one board blue / purple for another player.
+- The design is basic, with one board red for one player, and one board blue for another player.
 
 ### Python
 - Thanks to the open-source battleships projects that helped me to understand the main concepts of the game:
