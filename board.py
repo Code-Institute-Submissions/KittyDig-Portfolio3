@@ -90,7 +90,8 @@ class Board:
         return all(not ship for ship in self.ships)
 
 
-# some of the code for the structure and logic in this section was derived from code found on:
+# some of the code for the structure and logic for board setup
+# and ship placement in this section was derived from code found on:
 # https://codereview.stackexchange.com/questions/232013/a-simple-battleship-game
 # https://pythondex.com/python-battleship-game
 # https://discuss.codecademy.com/t/excellent-battleship-game-written-in-python/430605
