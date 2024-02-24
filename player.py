@@ -5,6 +5,7 @@ class Player:
         """ initializes the player """
         self.name = name
 
+
     def make_guess(self, opponent_board):
         """ gets the player's guess """
         while True:
