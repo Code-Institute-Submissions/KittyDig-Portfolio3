@@ -6,8 +6,8 @@ def main():
         try:
             # logic for giving the player the option to choose between a computer controlled opponant or another person
             print("Choose your opponent:")
-            print("1. Play against Another Player")
-            print("2. Play against Computer")
+            print("1. Play against a local player")
+            print("2. Play against the computer")
 
             choice = int(input("Enter 1 or 2: "))
                         

@@ -2,7 +2,7 @@
 
 ![mockup](images/mockup1.png)
 
-This is a take on the classic game 'Battleships' made entirely with python. It is a command line two player game which was deployed using Heroku.
+This is a take on the classic game 'Battleships' made entirely with python. It is a command line game that can be played with two players or against a computer, which was deployed using Heroku.
 
 The live site can be found [here](https://portfolio3-battleships-225355a434d1.herokuapp.com/).
 
@@ -78,6 +78,11 @@ Project goals:
 - Player 1 goes first, they are asked to give the row and column of their guess.
 - If the player gives a guess that is not a valid response, they are informed of this, and are told to give a different answer.
 - If the player hits the other player's ships and manages to sink them both, this player wins.
+
+### Player Options
+- Players have the option to play against another human or against the computer.
+- When starting the game, the player is prompted to choose their opponent, either a human player or the computer.
+- If the player chooses to play against the computer, the computer will make random guesses for its turns.
 
 ## Technologies Used
 - Python for creating the game.
