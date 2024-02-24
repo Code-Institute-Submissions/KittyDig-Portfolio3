@@ -2,23 +2,30 @@
 from game import BattleshipsGame
 
 def main():
-    print("Choose your opponent:")
-    print("1. Play against Another Player")
-    print("2. Play against Computer")
+    while True:
+        try:
+            # logic for giving the player the option to choose between a computer controlled opponant or another person
+            print("Choose your opponent:")
+            print("1. Play against Another Player")
+            print("2. Play against Computer")
 
-    choice = input("Enter 1 or 2: ")
+            choice = int(input("Enter 1 or 2: "))
+                        
+            if choice == 1:
+                player_type = "human"
+            elif choice == 2:
+                player_type = "computer"
+            else:
+                print("Invalid choice. Please enter 1 or 2.")
+                continue  # goes back to the beginning of the loop
 
-    # logic to ask the player if they want to play against another player or computer
-    if choice == "1":
-        game = BattleshipsGame(player2_type="human")
-    elif choice == "2":
-        game = BattleshipsGame(player2_type="computer")
-    else:
-        print("Invalid choice. Please enter 1 or 2.")
-        return
+            game = BattleshipsGame(player2_type=player_type)
+            game.setup_game()
+            game.play()
+            break  # exits the loop if the game has been played
 
-    game.setup_game()
-    game.play()
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
 if __name__ == "__main__":
     main()

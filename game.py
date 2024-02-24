@@ -52,7 +52,11 @@ Rules:
                 break
 
             # player 2's turn
-            guess2 = self.player2.make_guess(self.board1)
+            if self.player2.name == "Computer":
+                guess2 = self.computer_make_guess(self.board1)
+            else:
+                guess2 = self.player2.make_guess(self.board1)
+
             result2 = self.board1.receive_attack(*guess2)
             print(f"{self.player2.name} attacks {guess2} - Result: {result2}")
             self.board1.display()
@@ -62,11 +66,18 @@ Rules:
             print(f"{self.player2.name} wins!")
         else:
             print(f"{self.player1.name} wins!")
-            
+
+    def computer_make_guess(self, board):
+        # generates a random guess for the computer player
+        row = random.randint(1, board.size)
+        col = random.randint(1, board.size)
+        return row, col
+        
 if __name__ == "__main__":
-    game = BattleshipsGame()
+    game = BattleshipsGame(player2_type="computer")
     game.setup_game()
     game.play()
+
 
     # some of the code for the structure and logic in this section was derived from code found on:
     # https://pythondex.com/python-battleship-game
